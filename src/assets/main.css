@@ -1,0 +1,56 @@
+:root {
+  --red: #e51837;
+  --ink: #1a1a1a;
+  --gray: #666;
+  --gap: 74px;
+  --pad: 40px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --pad: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gap: 40px;
+    --pad: 20px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Genos', sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.banner {
+  height: clamp(240px, 41.2vw, 593px);
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
